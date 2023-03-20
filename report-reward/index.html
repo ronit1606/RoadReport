@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Violation Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <h1>Traffic Violation Reporting System</h1>
+        <label for="violation-type">Violation Type:</label>
+        <select name="violation-type" id="violation-type">
+            <option value="">Select violation type</option>
+            <option value="Running red light">Running red light</option>
+            <option value="Speeding">Speeding</option>
+            <option value="Distracted driving">Distracted driving</option>
+            <option value="Drunk driving">Drunk driving</option>
+            <option value="Reckless driving">Reckless driving</option>
+        </select>
+
+        <label for="license-plate">License Plate Number:</label>
+        <input type="text" name="license-plate" id="license-plate">
+
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" rows="5"></textarea>
+
+        <label for="photo">Photo:</label>
+        <input type="file" name="photo" id="photo" accept="image/*">
+
+        <label for="video">Video:</label>
+        <input type="file" name="video" id="video" accept="video/*">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

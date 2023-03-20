@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Road Safety Issue Reporting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<form>
+		<h1>Road Safety Issue Reporting</h1>
+		<h3>---------------------------</h3>
+		<label for="issue">Select Issue Type:</label>
+		<select id="issue" name="issue">
+			<option value="pothole">Pothole</option>
+			<option value="damaged-sign">Damaged Sign</option>
+			<option value="malfunctioning-traffic-light">Malfunctioning Traffic Light</option>
+			<option value="other">Other(Please Specify)</option>
+		</select>
+		<label for="description">Description:</label>
+		<textarea id="description" name="description"></textarea>
+		<label for="location">Location:</label>
+		<input type="text" id="location" name="location" placeholder="Enter your location">
+		<div id="map"></div>
+		<label for="image">Upload Image:</label>
+		<input type="file" id="image" name="image">
+		<button type="submit">Submit</button>
+	</form>
+    <script src="script.js"></script>
+</body>
+</html>

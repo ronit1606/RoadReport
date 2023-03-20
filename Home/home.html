@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Traffic Police</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #0072C6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #0072C6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head" class="header">
+        <img src="./logo.jpeg">
+
+    </div>
+
+    <div class="navbar">
+        <a href="#head">Home</a>
+        <a href="#services">Services </a>
+        <a href="../content/content.html">Rules & Regulations</a>
+        <a href="../user-dashboard/index.html">User Dashboard </a>
+        <a href="#contact">Contact Us</a>
+    </div>
+    <div id="services" class="services">
+
+        <h2>Our Services</h2>
+
+        <div class="blocks">
+            <div class="block">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbMGdbIqpb48UiqBX7v1Cre7Rf_i3JYitD9BZ-pReMJY_qVyJfyVPFJdnQi-wpze0Tbw&usqp=CAU"
+                    alt="Image 1">
+
+                <a href="../report an issue/index.html" class="anchortag" href="/reportIssue.html">Report Traffic issue </a>
+            </div>
+            <div class="block">
+                <img src="https://media.istockphoto.com/id/1214983520/vector/two-automobile-road-crash-solid-icon-frontal-or-side-driving-collision-symbol-glyph-style.jpg?s=612x612&w=0&k=20&c=uFIa3BZu0AZzzLB5mNfFR9SqU4p-LLq4PQhN4f_RgeU="
+                    alt="Image 2">
+
+                <a href="../accident/accident.html">Report Accident</a>
+            </div>
+            <div class="block">
+                <img src="https://media.istockphoto.com/id/1304220514/vector/bicycle-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=ZQntvHdLetHwsKk6V1_PBaGydHj9tizQEr1tU1M2sx0="
+                    alt="Image 3">
+
+                <a href="../report-reward/index.html">Report Violators </a>
+            </div>
+            <div class="block">
+                <img src="https://p.kindpng.com/picc/s/751-7515408_transparent-lego-clipart-black-and-white-rules-clipart.png"
+                    alt="Image 4">
+
+                <a href="../content/content.html">View Rules </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-content">
+        <h2>Welcome to the Traffic Police website!</h2>
+        <p>Our mission is to ensure the safety and efficiency of our roads, and to uphold the laws and regulations that
+            govern them. We are committed to promoting responsible driving habits and reducing the number of accidents
+            on our roads.</p>
+        <p>Here are some of the key features of our website:</p>
+        <ul>
+            <li>Traffic Alerts: Stay up-to-date on the latest traffic conditions and road closures in your area.</li>
+            <li>Driver Resources: Get information on traffic laws, driver safety tips, and licensing requirements.</li>
+            <li>Vehicle Registration: Register your vehicle online, and find out about vehicle inspection requirements.
+            </li>
+            <li>Online Payments: Pay traffic fines and other fees online, quickly and easily.</li>
+            <li>Contact Us: Have a question or concern? Contact us through our online form or by phone.</li>
+        </ul>
+    </div>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    </main>
+    <div class="footer">
+        <p>Thank you for your commitment to safe and responsible driving!</p>
+        <p>&copy; 2023 Traffic Police . All rights reserved.</p>
+    </div>
+
+</body>
+<script>
+    // JavaScript for slideshow
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentSlide].classList.add('active');
+        currentSlide++;
+        if (currentSlide === slides.length) {
+            currentSlide = 0;
+        }
+        setTimeout(showSlide, 4000); // Change image every 4 seconds
+    }
+
+    showSlide();
+
+</script>
+
+</html>

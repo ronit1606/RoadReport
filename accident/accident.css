@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+  }
+  
+  .btn_emergency{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    /* background-color: red; */
+    color: white;
+    /* margin-left: 40%; */
+  }
+
+  button{
+    background-color: red;
+    color: white;
+    font-size:20px ;
+    padding: 1%;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-bottom: 3%;
+    /* border: 1px solid white; */
+  }
+
+  .police{
+    background-color: green;
+  }
+  .ambulance{
+    background-color: red;
+  }
+  .fireb{
+    background-color: blue;
+  }
+  

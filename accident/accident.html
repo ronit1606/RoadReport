@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emergency Alert</title>
+    <link rel="stylesheet" type="text/css" href="accident.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h1>Emergency Alert</h1>
+        <label for="issue">Select Accident level:</label>
+        <select id="issue" name="issue">
+            <option value="pothole">Minor (No threat to life and property) </option>
+            <option value="damaged-sign">Major (Need urgent assistence) </option>
+            <option value="other">Other(Please Specify)</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter your location">
+
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image">
+        <button type="submit">Submit</button>
+        
+        <div class="btn_emergency">
+    
+            <button class="ambulance" onclick="sendAlert()">Call Ambulance</button>
+            <button class="police" onclick="sendAlert()">Call Police</button>
+            <button class="fireb" onclick="sendAlert()">Call Fire Brigade</button>
+    
+        </div>
+    </form>
+
+    <script src="accident.js"></script>
+</body>
+
+</html>
